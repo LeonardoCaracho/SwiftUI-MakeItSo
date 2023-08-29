@@ -22,6 +22,7 @@
 		4CF22AC92A9D0F7900CDE10B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4CF22AC82A9D0F7900CDE10B /* FirebaseAuth */; };
 		4CF22ACB2A9D0F7900CDE10B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4CF22ACA2A9D0F7900CDE10B /* FirebaseFirestore */; };
 		4CF22ACD2A9D0F7900CDE10B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4CF22ACC2A9D0F7900CDE10B /* FirebaseFirestoreSwift */; };
+		4CF22AD02A9D655300CDE10B /* ReminderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF22ACF2A9D655300CDE10B /* ReminderRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		4CF22ABC2A9CA36500CDE10B /* RemindersListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListRowView.swift; sourceTree = "<group>"; };
 		4CF22ABF2A9CA6E700CDE10B /* ReminderToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderToggleStyle.swift; sourceTree = "<group>"; };
 		4CF22AC12A9D0E9B00CDE10B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CF22ACF2A9D655300CDE10B /* ReminderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		4CF22AB62A96D23300CDE10B /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				4CF22ACE2A9D653900CDE10B /* Repositories */,
 				4CF22ABE2A9CA61600CDE10B /* Styles */,
 				4CF22AB92A96D25B00CDE10B /* Views */,
 				4CF22AB82A96D25000CDE10B /* ViewModels */,
@@ -143,6 +146,14 @@
 				4CF22ABF2A9CA6E700CDE10B /* ReminderToggleStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		4CF22ACE2A9D653900CDE10B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4CF22ACF2A9D655300CDE10B /* ReminderRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF22AC02A9CA6E700CDE10B /* ReminderToggleStyle.swift in Sources */,
+				4CF22AD02A9D655300CDE10B /* ReminderRepository.swift in Sources */,
 				4CF22ABB2A96D2DF00CDE10B /* RemindersListViewModel.swift in Sources */,
 				4CBDFA502A96BDB800B94F5C /* Reminder.swift in Sources */,
 				4CBDFA432A96BD3800B94F5C /* RemindersListView.swift in Sources */,

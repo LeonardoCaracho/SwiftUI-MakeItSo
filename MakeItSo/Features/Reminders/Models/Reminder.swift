@@ -23,3 +23,7 @@ extension Reminder {
         Reminder(title: "PROFIT!"),
     ]
 }
+
+extension Reminder {
+    static let collectionName: String = "Reminders"
+}

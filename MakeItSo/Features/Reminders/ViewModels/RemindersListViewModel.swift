@@ -10,7 +10,7 @@ import Combine
 
 class RemindersListViewModel: ObservableObject {
     @Published var reminders = [Reminder]()
-
+    
     @Published var errorMessage: String?
     
     private var reminderRepository: ReminderRepository = ReminderRepository()
@@ -31,9 +31,18 @@ class RemindersListViewModel: ObservableObject {
         }
     }
     
-    func toggleCompleted(_ reminder: Reminder) {
-        if let index = reminders.firstIndex(where: { $0.id == reminder.id }) {
-            reminders[index].isCompleted.toggle()
+    func setCompleted(_ reminder: Reminder, isCompleted: Bool) {
+        var editedReminder = reminder
+        editedReminder.isCompleted = isCompleted
+        updateReminder(editedReminder)
+    }
+    
+    func updateReminder(_ reminder: Reminder) {
+        do {
+            try reminderRepository.updateReminder(reminder)
+        } catch {
+            print(error)
+            errorMessage = error.localizedDescription
         }
     }
 }

@@ -14,8 +14,14 @@ struct RemindersListView: View {
     
     @State private var editableReminder: Reminder? = nil
     
+    @State private var showSettings: Bool = false
+    
     private func presentAddReminderView() {
         isAddReminderDialogPresented.toggle()
+    }
+    
+    private func presentSettings() {
+        showSettings.toggle()
     }
         
     var body: some View {
@@ -37,6 +43,13 @@ struct RemindersListView: View {
                 }
         }
         .toolbar {
+            ToolbarItem(placement: .confirmationAction) {
+                Button {
+                    presentSettings()
+                } label: {
+                    Image(systemName: "gearshape")
+                }
+            }
             ToolbarItemGroup(placement: .bottomBar) {
                 Button(action: presentAddReminderView) {
                     HStack {
@@ -57,6 +70,9 @@ struct RemindersListView: View {
                 viewModel.updateReminder(reminder)
             }
         })
+        .sheet(isPresented: $showSettings) {
+            SettingsView()
+        }
         .tint(.red)
     }
 }

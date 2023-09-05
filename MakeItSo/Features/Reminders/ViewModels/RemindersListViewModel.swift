@@ -25,7 +25,7 @@ class RemindersListViewModel: ObservableObject {
     
     func addReminder(_ reminder: Reminder) {
         do {
-            try reminderRepository.addReminders(reminder)
+            try reminderRepository.addReminder(reminder)
             errorMessage = nil
         } catch {
             print(error)

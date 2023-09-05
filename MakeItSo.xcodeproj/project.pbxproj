@@ -10,6 +10,17 @@
 		4C6E819A2AA5F7E000180F52 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 4C6E81992AA5F7E000180F52 /* Factory */; };
 		4C6E819E2AA5FEC100180F52 /* Firebase+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E819D2AA5FEC100180F52 /* Firebase+Injection.swift */; };
 		4C6E81A02AA6A85200180F52 /* Repositories+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E819F2AA6A85200180F52 /* Repositories+Injection.swift */; };
+		4C6E81A62AA72F9600180F52 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81A52AA72F9600180F52 /* SettingsView.swift */; };
+		4C6E81A82AA72FE800180F52 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81A72AA72FE800180F52 /* SettingsViewModel.swift */; };
+		4C6E81AF2AA730A400180F52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81AA2AA730A400180F52 /* LoginView.swift */; };
+		4C6E81B02AA730A400180F52 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81AB2AA730A400180F52 /* GoogleSignInButton.swift */; };
+		4C6E81B12AA730A400180F52 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81AC2AA730A400180F52 /* SignupView.swift */; };
+		4C6E81B22AA730A400180F52 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81AD2AA730A400180F52 /* UserProfileView.swift */; };
+		4C6E81B32AA730A400180F52 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81AE2AA730A400180F52 /* AuthenticationView.swift */; };
+		4C6E81B72AA730F500180F52 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81B52AA730F500180F52 /* UserProfileViewModel.swift */; };
+		4C6E81B82AA730F500180F52 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81B62AA730F500180F52 /* AuthenticationViewModel.swift */; };
+		4C6E81BB2AA7EA2700180F52 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81BA2AA7EA2700180F52 /* AuthenticationService.swift */; };
+		4C6E81BD2AA7ECBD00180F52 /* AuthenticationService+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E81BC2AA7ECBD00180F52 /* AuthenticationService+Injection.swift */; };
 		4CBDFA412A96BD3800B94F5C /* MakeItSoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDFA402A96BD3800B94F5C /* MakeItSoApp.swift */; };
 		4CBDFA432A96BD3800B94F5C /* RemindersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDFA422A96BD3800B94F5C /* RemindersListView.swift */; };
 		4CBDFA452A96BD3900B94F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBDFA442A96BD3900B94F5C /* Assets.xcassets */; };
@@ -31,6 +42,17 @@
 /* Begin PBXFileReference section */
 		4C6E819D2AA5FEC100180F52 /* Firebase+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injection.swift"; sourceTree = "<group>"; };
 		4C6E819F2AA6A85200180F52 /* Repositories+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repositories+Injection.swift"; sourceTree = "<group>"; };
+		4C6E81A52AA72F9600180F52 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4C6E81A72AA72FE800180F52 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4C6E81AA2AA730A400180F52 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4C6E81AB2AA730A400180F52 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
+		4C6E81AC2AA730A400180F52 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		4C6E81AD2AA730A400180F52 /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		4C6E81AE2AA730A400180F52 /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		4C6E81B52AA730F500180F52 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		4C6E81B62AA730F500180F52 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		4C6E81BA2AA7EA2700180F52 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		4C6E81BC2AA7ECBD00180F52 /* AuthenticationService+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService+Injection.swift"; sourceTree = "<group>"; };
 		4CBDFA3D2A96BD3800B94F5C /* MakeItSo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeItSo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBDFA402A96BD3800B94F5C /* MakeItSoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItSoApp.swift; sourceTree = "<group>"; };
 		4CBDFA422A96BD3800B94F5C /* RemindersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersListView.swift; sourceTree = "<group>"; };
@@ -79,6 +101,71 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		4C6E81A12AA72F3800180F52 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E81A42AA72F6300180F52 /* ViewModels */,
+				4C6E81A32AA72F5A00180F52 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4C6E81A22AA72F4600180F52 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E81B92AA7312500180F52 /* Services */,
+				4C6E81B42AA730EA00180F52 /* ViewModels */,
+				4C6E81A92AA7309800180F52 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4C6E81A32AA72F5A00180F52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E81A52AA72F9600180F52 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C6E81A42AA72F6300180F52 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E81A72AA72FE800180F52 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C6E81A92AA7309800180F52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E81AE2AA730A400180F52 /* AuthenticationView.swift */,
+				4C6E81AB2AA730A400180F52 /* GoogleSignInButton.swift */,
+				4C6E81AA2AA730A400180F52 /* LoginView.swift */,
+				4C6E81AC2AA730A400180F52 /* SignupView.swift */,
+				4C6E81AD2AA730A400180F52 /* UserProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C6E81B42AA730EA00180F52 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E81B62AA730F500180F52 /* AuthenticationViewModel.swift */,
+				4C6E81B52AA730F500180F52 /* UserProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C6E81B92AA7312500180F52 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E81BA2AA7EA2700180F52 /* AuthenticationService.swift */,
+				4C6E81BC2AA7ECBD00180F52 /* AuthenticationService+Injection.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4CBDFA342A96BD3700B94F5C = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +207,8 @@
 		4CF22AB52A96D22A00CDE10B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4C6E81A22AA72F4600180F52 /* Authentication */,
+				4C6E81A12AA72F3800180F52 /* Settings */,
 				4CF22AB62A96D23300CDE10B /* Reminders */,
 			);
 			path = Features;
@@ -265,14 +354,25 @@
 			files = (
 				4CF22AC02A9CA6E700CDE10B /* ReminderToggleStyle.swift in Sources */,
 				4C6E819E2AA5FEC100180F52 /* Firebase+Injection.swift in Sources */,
+				4C6E81B82AA730F500180F52 /* AuthenticationViewModel.swift in Sources */,
 				4CF22AD02A9D655300CDE10B /* ReminderRepository.swift in Sources */,
 				4CF22ABB2A96D2DF00CDE10B /* RemindersListViewModel.swift in Sources */,
 				4CBDFA502A96BDB800B94F5C /* Reminder.swift in Sources */,
 				4C6E81A02AA6A85200180F52 /* Repositories+Injection.swift in Sources */,
+				4C6E81B02AA730A400180F52 /* GoogleSignInButton.swift in Sources */,
 				4CBDFA432A96BD3800B94F5C /* RemindersListView.swift in Sources */,
 				4CF22AB42A96C85300CDE10B /* EditReminderDetailsView.swift in Sources */,
+				4C6E81B12AA730A400180F52 /* SignupView.swift in Sources */,
 				4CBDFA412A96BD3800B94F5C /* MakeItSoApp.swift in Sources */,
+				4C6E81B22AA730A400180F52 /* UserProfileView.swift in Sources */,
 				4CF22ABD2A9CA36500CDE10B /* RemindersListRowView.swift in Sources */,
+				4C6E81B32AA730A400180F52 /* AuthenticationView.swift in Sources */,
+				4C6E81AF2AA730A400180F52 /* LoginView.swift in Sources */,
+				4C6E81A62AA72F9600180F52 /* SettingsView.swift in Sources */,
+				4C6E81A82AA72FE800180F52 /* SettingsViewModel.swift in Sources */,
+				4C6E81B72AA730F500180F52 /* UserProfileViewModel.swift in Sources */,
+				4C6E81BB2AA7EA2700180F52 /* AuthenticationService.swift in Sources */,
+				4C6E81BD2AA7ECBD00180F52 /* AuthenticationService+Injection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

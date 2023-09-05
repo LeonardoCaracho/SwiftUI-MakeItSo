@@ -43,4 +43,21 @@ extension Container {
         }
         .singleton
     }
+    
+    public var auth: Factory<Auth> {
+        Factory(self) {
+            var env = ""
+            if Container.shared.useEmulator() {
+                let host = "localhost"
+                let port = 9099
+                env = "to use the local emulator on \(host):\(port)"
+                Auth.auth().useEmulator(withHost: host, port: port)
+            } else {
+                env = "to use firebase backend"
+            }
+            print("Configuring Firebase Auth \(env)")
+            return Auth.auth()
+        }
+        .singleton
+    }
 }

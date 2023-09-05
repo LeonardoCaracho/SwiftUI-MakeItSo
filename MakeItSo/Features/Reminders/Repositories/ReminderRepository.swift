@@ -8,8 +8,11 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
+import Factory
 
 class ReminderRepository: ObservableObject {
+    @Injected(\.firestore) var firestore
+    
     @Published var reminders = [Reminder]()
     
     private var listenerRegistration: ListenerRegistration?
@@ -53,8 +56,7 @@ class ReminderRepository: ObservableObject {
     }
     
     func addReminders(_ reminder: Reminder) throws {
-        try Firestore
-            .firestore()
+        try firestore
             .collection(Reminder.collectionName)
             .addDocument(from: reminder)
     }
@@ -64,8 +66,7 @@ class ReminderRepository: ObservableObject {
             fatalError("Reminder \(reminder.title) has no document ID.")
         }
         
-        try Firestore
-            .firestore()
+        try firestore
             .collection(Reminder.collectionName)
             .document(documentId)
             .setData(from: reminder, merge: true)
@@ -76,8 +77,7 @@ class ReminderRepository: ObservableObject {
             fatalError("Reminder \(reminder.title) has no document ID.")
         }
         
-        Firestore
-            .firestore()
+        firestore
             .collection(Reminder.collectionName)
             .document(documentId)
             .delete()
